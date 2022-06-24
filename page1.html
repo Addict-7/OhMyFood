@@ -22,70 +22,90 @@
         </header>
 
         <section class="menu">
-            
+
             <div class="menu__image1"></div>
 
             <div class="menu__bloc">
                 <div class="menu__name">
                     <h1>A la française</h1>
-                    <i class="coeur fa-thin fa-heart"></i>
+                    <div class="menu__icon">
+                        <i class="coeur fa-regular fa-heart"></i>
+                        <i class="coeur fa-solid fa-heart"></i>
+                    </div>
                 </div>
 
-                <div class="entries">
-                    <h2>entrées</h2>
-                    <div class="entries__choices">
+                <div class="menu__title">
+                    <h2>entrées</h2>  
+                <div class="menu__smallbloc">     
+                    <div class="menu__choices">
                         <h3>Tartare de poule acidulé</h3>
                         <p>Aux zests d'orange</p>
                         <span>25€</span>
+                        <i class="menu__icon fa-regular fa-circle-check"></i>
                     </div>
-                    <div class="entries__choices">
+                    <div class="menu__choices">
                         <h3>Velouté de légumes d'antan</h3>
                         <p>Carotte, panais, topinambour</p>
                         <span>35€</span>
+                        <i class="menu__icon fa-regular fa-circle-check"></i>
                     </div>
-                    <div class="entries__choices">
+                    <div class="menu__choices">
                         <h3>Soupe à l'oignon</h3>
                         <p>Revisitée</p>
                         <span>20€</span>
+                        <i class="menu__btn fa-regular fa-circle-check"></i>
+                    </div>
                 </div>
-
-                <div class="dishes">
+                </div>        
+                <div class="menu__title">
                     <h2>plats</h2>
-                    <div class="dishes__choices">
+                <div class="menu__smallbloc">    
+                    <div class="menu__choices">
                         <h3>Coquilles Saint-Jacques</h3>
                         <p>Accompagnées d'une purée de panais</p>
                         <span>40€</span>
+                        <i class="menu__btn fa-regular fa-circle-check"></i>
                     </div>
-                    <div class="dishes__choices">
+                    <div class="menu__choices">
                         <h3>Magret de canard</h3>
                         <p>Et parmentir de pommes de terres</p>
                         <span>35€</span>
+                        <i class="menu__btn fa-regular fa-circle-check"></i>
                     </div>
-                    <div class="dishes__choices">
+                    <div class="menu__choices">
                         <h3>Pigeonneau d'Ille-et-Vilaine</h3>
                         <p>Sur son lit de gnocchis aux légumes</p>
                         <span>44€</span>
+                        <i class="menu__btn fa-regular fa-circle-check"></i>
                     </div>
                 </div>
-                <div class="desserts">
+                </div>
+                <div class="menu__title">
                     <h2>desserts</h2>
-                    <div class="desserts__choices">
+                <div class="menu__smallbloc">
+                    <div class="menu__choices">
                         <h3>Pétales de violettes glacés</h3>
                         <p>Et purée de noisettes</p>
                         <span>18€</span>
+                        <i class="menu__btn fa-regular fa-circle-check"></i>
                     </div>
-                    <div class="desserts__choices">
+                    <div class="menu__choices">
                         <h3>Fondant au chocolat</h3>
                         <p>Revisité</p>
                         <span>22€</span>
+                        <i class="menu__btn fa-regular fa-circle-check"></i>
                     </div>
-                    <div class="desserts__choices">
+                    <div class="menu__choices">
                         <h3>Millefeuille croustillant</h3>
                         <p>Myrtilles et pâte d'amande</p>
                         <span>23€</span>
+                        <i class="menu__icon fa-regular fa-circle-check"></i>
                     </div>
                 </div>
-                <button class="btn" type="button">Commander</button>
+                </div>
+                <div class="btn">
+                    <button class="btn__command" type="button">Commander</button>
+                </div>
             </div>
         </section>
     
@@ -94,11 +114,11 @@
     </body>
 
     <footer>
-        <div id="about">
+        <div class="about">
             <h2>ohmyfood</h2>
                 <ul>
-                    <li><a href="#">Proposer un restaurant</a></li>
-                    <li><a href="#">Devenir partenaire</a></li>
+                    <li><a href="#"><i class="about__icons fa-solid fa-utensils"></i>&nbsp;&nbsp;Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="about__icons fa-solid fa-handshake-angle"></i>&nbsp;&nbsp;Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="mailto:ohmyfood@commandez.com">Contact</a></li>
                 </ul>
