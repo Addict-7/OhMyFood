@@ -86,9 +86,7 @@ $tertiary-color: #99E2D0;
     margin-left: 5%;
     margin-right: 5%;
     gap: 20px;
-    &__title {
-        
-    }
+
     &__steps {
         display: flex;
         align-items: center;
@@ -119,9 +117,6 @@ $tertiary-color: #99E2D0;
         padding: 15px 15px 15px 15px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
         background-color: rgb(233, 233, 233);
-        span {
-
-        }
     }
     &__icons {
         color:rgb(131, 131, 131);
