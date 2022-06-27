@@ -126,7 +126,6 @@ $tertiary-color: #99E2D0;
         padding-right: 20px;
         padding-left: 20px;
     }
-    
 }
 
 .restaurant {
@@ -222,7 +221,6 @@ $tertiary-color: #99E2D0;
             transform: scale(104%)
         }
     }
-
 }
 
 .menu {
@@ -281,8 +279,8 @@ $tertiary-color: #99E2D0;
             transform: scale(110%)
         }
     }
-    &__title {
 
+    &__title {
         h2 {
             font-weight: lighter;
             text-transform: uppercase;
@@ -370,6 +368,22 @@ $tertiary-color: #99E2D0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
     }
 }
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    &__command {
+    width: 150px;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    padding: 16px;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    }
+}
+
 
 
 footer {
@@ -388,7 +402,6 @@ footer {
     img {
         filter: invert(100%);
     }
-
     ul {
         list-style:none;
         margin-left:0;
