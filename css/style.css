@@ -71,6 +71,7 @@ body {
   font-size: 14px;
   color: white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .functioning {
@@ -201,7 +202,7 @@ body {
 }
 .restaurant__icon:hover .fa-solid {
   opacity: 1;
-  transform: scale(104%);
+  transform: scale(108%);
 }
 
 .menu {
@@ -236,8 +237,28 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.menu__name .coeur {
-  font-size: 25px;
+.menu__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__icon i {
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  right: 7%;
+}
+.menu__icon .fa-solid {
+  position: absolute;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.menu__icon:hover .fa-solid {
+  opacity: 1;
+  transform: scale(110%);
 }
 .menu__title h2 {
   font-weight: lighter;
@@ -250,7 +271,6 @@ body {
   z-index: 1;
 }
 .menu__choices {
-
   animation: appear 1s;
   animation-fill-mode: both;
   display: flex;
@@ -313,6 +333,22 @@ body {
     transform: translateY(0%);
     opacity: 1;
   }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn__command {
+  width: 150px;
+  border: 0px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 16px;
+  font-size: 14px;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
