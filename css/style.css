@@ -271,18 +271,20 @@ body {
   z-index: 1;
 }
 .menu__choices {
-  animation: appear 1s;
-  animation-fill-mode: both;
   display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   font-size: 18px;
-  border: 1px solid transparent;
+  overflow: hidden;
+  border: 0px solid transparent;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
 .menu__choices:nth-child(1) {
   animation-delay: 0.2s;
@@ -309,20 +311,25 @@ body {
   margin-top: 5px;
 }
 .menu__choices span {
-  position: absolute;
-  right: 30px;
-  top: 35px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  font-weight: bold;
+  gap: 20px;
+  transition: 0.4s;
+}
+.menu__choices span:hover {
+  margin-right: 78px;
 }
 .menu__choices i {
-  position: absolute;
-  right: -1px;
-  top: -1px;
+  margin-left: auto;
   background-color: #99E2D0;
   color: white;
-  padding: 23px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 10px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-right: -78px;
 }
 @keyframes appear {
   0% {
@@ -334,13 +341,16 @@ body {
     opacity: 1;
   }
 }
-
-.btn {
+.menu__text {
+  display: flex;
+  flex-direction: column;
+}
+.menu .btn {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-.btn__command {
+.menu .btn__command {
   width: 150px;
   border: 0px solid transparent;
   border-radius: 50px;
@@ -349,22 +359,7 @@ body {
   font-size: 14px;
   color: white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-.btn__command {
-  width: 150px;
-  border: 0px solid transparent;
-  border-radius: 50px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 16px;
-  font-size: 14px;
-  color: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 footer {
