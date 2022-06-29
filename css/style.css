@@ -4,12 +4,6 @@ body {
   font-family: "Roboto", "Shrikhand", sans-serif;
 }
 
-body .overlay {
-  position: absolute;
-  top: 0;
-  background-color: #3b3939;
-}
-
 .loading {
   display: flex;
   justify-content: center;
@@ -132,12 +126,16 @@ body .overlay {
   margin-left: 5%;
   margin-right: 5%;
   gap: 20px;
+  padding-bottom: 20px;
 }
 .functioning__steps {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.functioning__steps:hover p {
+  background-color: #FF79DA;
 }
 .functioning__steps p {
   display: flex;
@@ -258,6 +256,8 @@ body .overlay {
 }
 
 .menu {
+  border-radius: 25px;
+  margin-top: -30px;
   background-color: rgb(233, 233, 233);
 }
 .menu h1 {
@@ -285,7 +285,6 @@ body .overlay {
   padding-bottom: 50px;
   margin-left: 5%;
   margin-right: 5%;
-  border-radius: 25px;
 }
 .menu__name {
   display: flex;

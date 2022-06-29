@@ -5,12 +5,6 @@ body {
     font-family: 'Roboto', 'Shrikhand', sans-serif;
 }
 
-body .overlay {
-    position: absolute;
-    top: 0;
-    background-color: #3b3939;
-}
-
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
@@ -138,12 +132,16 @@ $tertiary-color: #99E2D0;
     margin-left: 5%;
     margin-right: 5%;
     gap: 20px;
+    padding-bottom: 20px;
 
     &__steps {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        &:hover p {
+            background-color: #FF79DA;
+        }
         
         p {
             display: flex;
@@ -275,8 +273,14 @@ $tertiary-color: #99E2D0;
     }
 }
 
+.menu__image1 {
+    
+}
+
 .menu {
 
+    border-radius: 25px;
+    margin-top: -30px;
     background-color: rgb(233, 233, 233);
 
     h1 {
@@ -305,7 +309,6 @@ $tertiary-color: #99E2D0;
         padding-bottom: 50px;
         margin-left: 5%;
         margin-right: 5%;
-        border-radius: 25px;
     }
     &__name {
         display: flex;
@@ -389,7 +392,6 @@ $tertiary-color: #99E2D0;
             &:nth-child(#{$i}){
                 animation-delay: 0.2s *$i;
             }
-
         }
  
         h3 {
