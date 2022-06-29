@@ -119,12 +119,16 @@ $tertiary-color: #99E2D0;
         width: 250px;
         border: 0px solid transparent;
         border-radius: 50px;
-        background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+        background: linear-gradient($secondary-color, $primary-color);
         padding: 16px;
         font-size: 14px;
         color: white;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
         cursor: pointer;
+        &:hover {
+            background: linear-gradient(lighten($secondary-color, 10%), lighten($primary-color, 10%));
+            box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 0.8);
+        }
     }
 }
 
@@ -142,18 +146,18 @@ $tertiary-color: #99E2D0;
         position: relative;
         
         p {
-        display: flex;
-        color: white;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        height: 22px;
-        width: 22px;
-        font-size: 15px;
-        background-color: #9356DC;
-        border-radius: 50%;
-        border: 1px solid transparent;
-        left: -10px;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            height: 22px;
+            width: 22px;
+            font-size: 15px;
+            background-color: #9356DC;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            left: -10px;
         }
     }
     &__label {
@@ -337,7 +341,7 @@ $tertiary-color: #99E2D0;
         h2 {
             font-weight: lighter;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 18px;
             border-bottom: 3px solid $tertiary-color;
             width   : 50px;
             height  : 30px;   
@@ -360,6 +364,27 @@ $tertiary-color: #99E2D0;
         margin-bottom: 20px;
         animation: appear 1s;
         animation-fill-mode: both;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover .menu__text {
+            transition: 0.4s;
+                h3 {
+                    max-width: calc(100% - 15px);
+                }
+                p {
+                    max-width: calc(100% - 15px);
+                }
+            }
+        &:hover .menu__btn {
+            transition: 0.4s;
+            margin-right: 0;
+            i {
+                animation: rotation 0.8s linear;
+            }
+        }
+
+
         @for $i from 1 to 5 {
             &:nth-child(#{$i}){
                 animation-delay: 0.2s *$i;
@@ -368,41 +393,40 @@ $tertiary-color: #99E2D0;
         }
  
         h3 {
-            font-size: 18px;
+            width: 100%;
+            font-size: 16px;
             margin-left: 10px;
             margin-top: 10px;
             margin-bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         p {
+            width: 100%;
             font-size: 14px;
             margin-left: 10px;
             margin-bottom: 10px;
             margin-top: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        span {
-            display: flex;
-            align-items: flex-end;
-            margin-left: auto;
-            font-weight: bold;
-            gap: 20px;
-            transition: 0.4s;
-            &:hover {
-                margin-right: 78px;
+
+        i {
+            font-size: 30px;
+        }
+        
+        @keyframes rotation {
+            0% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(0deg);
             }
         }
 
-        i {
-            margin-left: auto; 
-            background-color: $tertiary-color;
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            margin-right: -78px;
-        }
-        
         @keyframes appear {
             0% {
                 transform: translateY(25%);
@@ -414,10 +438,33 @@ $tertiary-color: #99E2D0;
                 }
             }
     }
-
     &__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__animated {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .menu__price {
+        display: flex;
+        align-items: flex-end;
+        padding-right: 20px;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+
+    &__btn {
+        background-color: $tertiary-color;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-right: -78px;
     }
 
 .btn {
@@ -432,8 +479,12 @@ $tertiary-color: #99E2D0;
     padding: 16px;
     font-size: 14px;
     color: white;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     cursor: pointer;
+    &:hover {
+        background: linear-gradient(lighten($secondary-color, 10%), lighten($primary-color, 10%));
+        box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 0.8);
+    }
     }
 }
 }
