@@ -267,7 +267,7 @@ body {
 }
 .restaurant__icon:hover .fa-solid {
   opacity: 1;
-  transform: scale(108%);
+  transform: scale(1.08);
 }
 
 .menu {
@@ -332,7 +332,7 @@ body {
 }
 .menu__icon:hover .fa-solid {
   opacity: 1;
-  transform: scale(110%);
+  transform: scale(1.1);
 }
 .menu__title {
   margin-top: 40px;
