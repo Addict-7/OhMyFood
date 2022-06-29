@@ -506,4 +506,46 @@ footer a {
   color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  .functioning {
+    gap: 30px;
+  }
+  .functioning h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  .functioning__steps {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .functioning__label {
+    justify-content: center;
+  }
+  .functioning__icons {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .restaurant h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .restaurant__bloc {
+    margin-left: 30%;
+    margin-right: 30%;
+    gap: 30px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .about {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
