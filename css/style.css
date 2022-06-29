@@ -339,18 +339,12 @@ body .overlay {
   margin-bottom: 20px;
   animation: appear 1s;
   animation-fill-mode: both;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu__choices:hover .menu__text {
   transition: 0.4s;
-}
-.menu__choices:hover .menu__text h3 {
-  max-width: calc(100% - 15px);
-}
-.menu__choices:hover .menu__text p {
-  max-width: calc(100% - 15px);
 }
 .menu__choices:hover .menu__btn {
   transition: 0.4s;
@@ -382,7 +376,7 @@ body .overlay {
   text-overflow: ellipsis;
 }
 .menu__choices p {
-  width: 100%;
+  width: 98%;
   font-size: 14px;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -413,9 +407,9 @@ body .overlay {
   }
 }
 .menu__text {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu__animated {
   display: flex;
@@ -427,6 +421,7 @@ body .overlay {
   padding-right: 20px;
   margin-left: 0px;
   font-weight: bold;
+  padding-left: 10px;
 }
 .menu__btn {
   background-color: #99E2D0;

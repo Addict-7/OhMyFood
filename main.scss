@@ -364,16 +364,16 @@ $tertiary-color: #99E2D0;
         margin-bottom: 20px;
         animation: appear 1s;
         animation-fill-mode: both;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
         &:hover .menu__text {
             transition: 0.4s;
                 h3 {
-                    max-width: calc(100% - 15px);
+
                 }
                 p {
-                    max-width: calc(100% - 15px);
+
                 }
             }
         &:hover .menu__btn {
@@ -403,7 +403,7 @@ $tertiary-color: #99E2D0;
             text-overflow: ellipsis;
         }
         p {
-            width: 100%;
+            width: 98%;
             font-size: 14px;
             margin-left: 10px;
             margin-bottom: 10px;
@@ -439,14 +439,15 @@ $tertiary-color: #99E2D0;
             }
     }
     &__text {
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
     &__animated {
         display: flex;
         flex-direction: row;
+
     }
 
     .menu__price {
@@ -455,6 +456,7 @@ $tertiary-color: #99E2D0;
         padding-right: 20px;
         margin-left: 0px;
         font-weight: bold;
+        padding-left: 10px;
     }
 
     &__btn {
