@@ -514,6 +514,13 @@ footer a {
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
+    font-size: 26px;
+  }
+  .functioning p {
+    font-size: 18px;
+  }
+  .functioning span {
+    font-size: 22px;
   }
   .functioning__steps {
     margin-left: 30%;
@@ -527,6 +534,7 @@ footer a {
     margin-right: 0%;
   }
   .restaurant h2 {
+    font-size: 26px;
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
@@ -537,6 +545,41 @@ footer a {
     margin-left: 30%;
     margin-right: 30%;
     gap: 30px;
+  }
+  .restaurant h3 {
+    font-size: 22px;
+  }
+  .restaurant p {
+    font-size: 18px;
+  }
+  .menu h1 {
+    font-size: 30px;
+  }
+  .menu h2 {
+    font-size: 26px;
+  }
+  .menu h3 {
+    font-size: 22px;
+  }
+  .menu p {
+    font-size: 18px;
+  }
+  .menu__btn {
+    padding: 24px;
+  }
+  .menu__name {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .menu i {
+    margin-right: 30%;
+  }
+  .menu__title {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .menu .btn__command {
+    font-size: 22px;
   }
   footer {
     display: flex;

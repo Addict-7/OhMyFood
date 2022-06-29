@@ -562,7 +562,16 @@ footer {
             display: flex;
             justify-content: center;
             margin-bottom: 0px;
+            font-size: 26px;
         }
+        p {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 22px;
+        }
+
         &__steps {
             margin-left: 30%;
             margin-right: 30%;
@@ -580,9 +589,8 @@ footer {
 
     .restaurant {
 
-
-
         h2 {
+            font-size: 26px;
             display: flex;
             justify-content: center;
             margin-bottom: 0px;
@@ -594,6 +602,52 @@ footer {
         margin-right: 30%;
         gap: 30px;
         }
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
+        }
+
+    }
+
+    .menu {
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        &__btn {
+            padding: 24px;
+        }
+
+        &__name {
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        i {
+            margin-right: 30%;
+        }
+        &__title {
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        .btn__command {
+            font-size: 22px;
+        }
+
 
     }
 
