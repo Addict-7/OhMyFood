@@ -7,6 +7,34 @@ body h1 {
   font-size: 24px;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0.8;
+  }
+}
 .loading {
   display: flex;
   justify-content: center;
@@ -34,16 +62,6 @@ body h1 {
   width: 40px;
   height: 40px;
   font-size: 40px;
-}
-@keyframes disappear {
-  0% {
-    transform: translateY(0%);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 0.8;
-  }
 }
 
 .header {
@@ -79,7 +97,7 @@ body h1 {
   padding-right: 5px;
 }
 .header__champ {
-  width: 100px;
+  width: 130px;
   background-color: rgb(212, 209, 209);
   border: 1px solid transparent;
 }
@@ -410,24 +428,6 @@ body h1 {
 }
 .menu__choices i {
   font-size: 30px;
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes appear {
-  0% {
-    transform: translateY(25%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
 }
 .menu__text {
   white-space: nowrap;
