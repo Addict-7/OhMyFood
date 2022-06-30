@@ -3,7 +3,11 @@ body {
     width: auto;
     margin: 0;
     font-family: 'Roboto', 'Shrikhand', sans-serif;
+    h1 {
+        font-size: 24px;
+    }
 }
+
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
@@ -394,12 +398,6 @@ $tertiary-color: #99E2D0;
         text-overflow: ellipsis;
         &:hover .menu__text {
             transition: 0.4s;
-                h3 {
-
-                }
-                p {
-
-                }
             }
         &:hover .menu__btn {
             transition: 0.4s;
@@ -417,7 +415,6 @@ $tertiary-color: #99E2D0;
         }
  
         h3 {
-            width: 100%;
             font-size: 16px;
             margin-left: 10px;
             margin-top: 10px;
@@ -427,7 +424,6 @@ $tertiary-color: #99E2D0;
             text-overflow: ellipsis;
         }
         p {
-            width: 98%;
             font-size: 14px;
             margin-left: 10px;
             margin-bottom: 10px;
